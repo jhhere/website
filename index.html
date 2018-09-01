@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 	<head>
 		<title>A whale of a greeting</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
 	</head>
 	<body>
-		<h1>hello, world</h1>
-		<p>Call me jhhere</p>
+		<div>
+			<h1>hello, world</h1>
+			<p>Call me jhhere</p>
+
+			<label>Name:</label>
+			<input type="text" ng-model="yourName" placeholder="Enter a name here">
+			<hr>
+			<h1>Hello {{yourName}}!</h1>
+		</div>
 	</body>
 </html>
 
